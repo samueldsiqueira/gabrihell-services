@@ -32,30 +32,30 @@ export default function References() {
   }, [])
 
   return (
-    <section id="references" ref={sectionRef} className="py-20 bg-gradient-to-br from-secondary to-accent">
+    <section id="references" ref={sectionRef} className="py-20 bg-tibia-bgLight border-y-2 border-tibia-bg tibia-texture">
       <div className="container mx-auto px-4">
         {/* Estatísticas */}
         <div className="mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white font-cinzel">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-tibia-yellow font-cinzel drop-shadow-[0_0_15px_rgba(255,255,0,0.6)]">
             Nossos Números
           </h2>
-          <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-tibia-cyan mb-12 max-w-2xl mx-auto drop-shadow-[0_0_10px_rgba(0,255,255,0.4)]">
             Resultados que comprovam nossa excelência e compromisso com cada cliente
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`bg-white/10 backdrop-blur-sm p-8 rounded-xl text-center transition-all duration-500 hover:bg-white/20 hover:scale-105 ${
+                className={`bg-tibia-bg tibia-texture-dark p-8 rounded-lg text-center transition-all duration-500 hover:scale-105 border-2 border-tibia-bgLight hover:border-tibia-purple ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="text-4xl mb-3">{stat.icon}</div>
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-cinzel">
+                <div className="text-4xl md:text-5xl font-bold text-tibia-yellow mb-2 font-cinzel drop-shadow-[0_0_10px_rgba(255,255,0,0.5)]">
                   {stat.number}
                 </div>
-                <div className="text-white/90 font-medium">{stat.label}</div>
+                <div className="text-tibia-gray font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -63,7 +63,7 @@ export default function References() {
 
         {/* Grupo de Referências */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white font-cinzel">
             Referências e Comunidade
           </h2>
           <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto">
@@ -75,9 +75,9 @@ export default function References() {
             }`}
             style={{ transitionDelay: '400ms' }}
           >
-            <div className="bg-white p-10 rounded-2xl shadow-2xl text-center">
+            <div className="bg-tibia-bg tibia-texture-dark p-10 rounded-2xl shadow-2xl text-center border-2 border-tibia-bgLight">
               <div className="flex justify-center mb-6">
-                <div className="bg-green-500 p-6 rounded-full">
+                <div className="bg-green-500 p-6 rounded-full shadow-lg shadow-green-500/50">
                   <svg
                     className="w-16 h-16 text-white"
                     fill="currentColor"
@@ -88,17 +88,17 @@ export default function References() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-secondary mb-4">
+              <h3 className="text-2xl font-bold text-primary mb-4 font-cinzel">
                 Grupo de Referências no WhatsApp
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-300 mb-6 leading-relaxed">
                 Junte-se ao nosso grupo exclusivo e converse com outros clientes, veja avaliações reais, tire dúvidas e acompanhe promoções especiais.
               </p>
               <a
                 href="https://chat.whatsapp.com/SEU_LINK_DE_CONVITE_AQUI"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg"
+                className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-green-500/50"
               >
                 <svg
                   className="w-6 h-6"
@@ -110,7 +110,7 @@ export default function References() {
                 </svg>
                 Entrar no Grupo de Referências
               </a>
-              <p className="text-sm text-gray-500 mt-4">
+              <p className="text-sm text-gray-400 mt-4">
                 Mais de 200 membros ativos compartilhando experiências
               </p>
             </div>
@@ -124,8 +124,8 @@ export default function References() {
           }`}
           style={{ transitionDelay: '800ms' }}
         >
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl max-w-3xl mx-auto">
-            <h3 className="text-3xl font-bold text-white mb-4">
+          <div className="bg-tibia-bg tibia-texture-dark p-8 rounded-2xl max-w-3xl mx-auto border-2 border-tibia-bgLight">
+            <h3 className="text-3xl font-bold text-white mb-4 font-cinzel">
               Pronto para Evoluir no Tibia?
             </h3>
             <p className="text-white/90 mb-6 text-lg">

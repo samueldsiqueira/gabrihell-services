@@ -2,23 +2,23 @@ import Image from 'next/image'
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-20 overflow-hidden">
+    <section id="contact" className="relative py-20 overflow-hidden bg-tibia-bg tibia-texture-dark">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/Illustrations/Artworks/WebsiteArtworkWinter2024.jpg"
           alt="Tibia Background"
           fill
-          className="object-cover opacity-20"
+          className="object-cover opacity-15"
         />
-        <div className="absolute inset-0 bg-secondary/90" />
+        <div className="absolute inset-0 bg-tibia-bg/90 tibia-texture-dark" />
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary drop-shadow-lg font-cinzel">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-tibia-yellow drop-shadow-[0_0_15px_rgba(255,255,0,0.6)] font-cinzel">
           Entre em Contato
         </h2>
-        <p className="text-xl mb-8 text-gray-300">
+        <p className="text-xl mb-8 text-tibia-cyan drop-shadow-[0_0_10px_rgba(0,255,255,0.4)]">
           Escolha a melhor forma de falar conosco
         </p>
         
@@ -47,7 +47,7 @@ export default function Contact() {
             href="https://wa.me/5537984010698"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#25D366] hover:bg-[#20ba5a] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 shadow-lg flex items-center gap-3 w-64"
+            className="bg-tibia-green hover:bg-tibia-green/80 text-tibia-bg px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg shadow-tibia-green/50 flex items-center gap-3 w-64 border-2 border-tibia-green/50"
           >
             <span className="text-2xl">📱</span>
             WhatsApp
@@ -56,7 +56,7 @@ export default function Contact() {
             href="https://discord.gg/seu-servidor"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#5865F2] hover:bg-[#4752c4] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 shadow-lg flex items-center gap-3 w-64"
+            className="bg-tibia-purple hover:bg-tibia-purple/80 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 shadow-lg shadow-tibia-purple/50 flex items-center gap-3 w-64 border-2 border-tibia-purple/50"
           >
             <span className="text-2xl">💬</span>
             Discord

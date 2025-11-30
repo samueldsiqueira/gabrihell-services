@@ -53,16 +53,16 @@ export default function Services() {
   }, [])
 
   return (
-    <section id="services" ref={sectionRef} className="py-20 bg-secondary">
+    <section id="services" ref={sectionRef} className="py-20 bg-tibia-bgLight border-y-2 border-tibia-bg tibia-texture">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary font-cinzel">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-tibia-yellow font-cinzel drop-shadow-[0_0_15px_rgba(255,255,0,0.6)]">
           Nossos Serviços
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`bg-accent/50 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-2 border-2 border-primary/30 ${
+              className={`bg-tibia-bg tibia-texture-dark p-8 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-tibia-purple/30 transition-all duration-500 hover:-translate-y-2 border-2 border-tibia-bgLight hover:border-tibia-purple ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
@@ -77,10 +77,10 @@ export default function Services() {
                   unoptimized
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-primary text-center font-cinzel">
+              <h3 className="text-2xl font-bold mb-3 text-tibia-yellow text-center font-cinzel">
                 {service.title}
               </h3>
-              <p className="text-gray-300 text-center">{service.description}</p>
+              <p className="text-tibia-gray text-center">{service.description}</p>
             </div>
           ))}
         </div>
