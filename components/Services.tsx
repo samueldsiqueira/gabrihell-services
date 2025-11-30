@@ -53,16 +53,16 @@ export default function Services() {
   }, [])
 
   return (
-    <section id="services" ref={sectionRef} className="py-20 bg-gray-50">
+    <section id="services" ref={sectionRef} className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-secondary">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary font-cinzel">
           Nossos Serviços
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-2 border-primary/20 ${
+              className={`bg-accent/50 backdrop-blur-sm p-8 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-2 border-2 border-primary/30 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
@@ -77,10 +77,10 @@ export default function Services() {
                   unoptimized
                 />
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-secondary text-center">
+              <h3 className="text-2xl font-bold mb-3 text-primary text-center font-cinzel">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-center">{service.description}</p>
+              <p className="text-gray-300 text-center">{service.description}</p>
             </div>
           ))}
         </div>

@@ -13,6 +13,10 @@ const config: Config = {
         secondary: '#1a1a2e',
         accent: '#16213e',
       },
+      fontFamily: {
+        cinzel: ['var(--font-cinzel)', 'serif'],
+        martel: ['var(--font-martel)', 'serif'],
+      },
     },
   },
   plugins: [],

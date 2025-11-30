@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
         
         <div className="relative inline-block mb-6">
-          <h1 className="text-5xl md:text-7xl font-bold relative">
+          <h1 className="text-5xl md:text-7xl font-bold relative font-cinzel">
             <span className="relative inline-block">
               {/* Texto principal com gradiente animado */}
               <span className="relative z-10 bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 bg-clip-text text-transparent animate-gradient-slow drop-shadow-2xl">

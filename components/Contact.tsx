@@ -15,7 +15,7 @@ export default function Contact() {
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary drop-shadow-lg">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary drop-shadow-lg font-cinzel">
           Entre em Contato
         </h2>
         <p className="text-xl mb-8 text-gray-300">

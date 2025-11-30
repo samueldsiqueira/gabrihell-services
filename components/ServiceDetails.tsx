@@ -105,12 +105,12 @@ export default function ServiceDetails() {
   }, [])
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-br from-accent to-secondary">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-secondary">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-primary font-cinzel">
           Detalhes dos Serviços
         </h2>
-        <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+        <p className="text-center text-gray-300 mb-16 max-w-2xl mx-auto">
           Conheça em detalhes cada um dos nossos serviços profissionais e descubra como podemos ajudar você a alcançar seus objetivos no Tibia.
         </p>
 
@@ -155,11 +155,11 @@ export default function ServiceDetails() {
 
                 {/* Conteúdo */}
                 <div className="lg:w-2/3">
-                  <div className="bg-gray-50 p-8 rounded-2xl shadow-lg border-2 border-primary/10">
-                    <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+                  <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl shadow-lg border-2 border-primary/20">
+                    <p className="text-gray-200 text-lg mb-6 leading-relaxed">
                       {service.description}
                     </p>
-                    <h4 className="text-xl font-bold text-secondary mb-4">
+                    <h4 className="text-xl font-bold text-primary mb-4">
                       O que está incluído:
                     </h4>
                     <ul className="space-y-3">
@@ -178,7 +178,7 @@ export default function ServiceDetails() {
                               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                             />
                           </svg>
-                          <span className="text-gray-700">{feature}</span>
+                          <span className="text-gray-300">{feature}</span>
                         </li>
                       ))}
                     </ul>

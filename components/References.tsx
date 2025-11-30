@@ -36,7 +36,7 @@ export default function References() {
       <div className="container mx-auto px-4">
         {/* Estatísticas */}
         <div className="mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white font-cinzel">
             Nossos Números
           </h2>
           <p className="text-center text-white/80 mb-12 max-w-2xl mx-auto">
@@ -52,7 +52,7 @@ export default function References() {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="text-4xl mb-3">{stat.icon}</div>
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2 font-cinzel">
                   {stat.number}
                 </div>
                 <div className="text-white/90 font-medium">{stat.label}</div>

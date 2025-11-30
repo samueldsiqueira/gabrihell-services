@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="relative group">
-            <div className="text-2xl font-bold text-primary animate-pulse">
+            <div className="text-2xl font-bold text-primary animate-pulse font-cinzel">
               <span className="relative inline-block">
                 <span className="relative z-10 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 bg-clip-text text-transparent animate-gradient">
                   Gabrihell Services
