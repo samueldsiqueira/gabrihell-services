@@ -19,8 +19,24 @@ export default function Navbar() {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="text-2xl font-bold text-primary">
-            Gabrihell Services
+          <div className="relative group">
+            <div className="text-2xl font-bold text-primary animate-pulse">
+              <span className="relative inline-block">
+                <span className="relative z-10 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 bg-clip-text text-transparent animate-gradient">
+                  Gabrihell Services
+                </span>
+                {/* Efeito de brilho */}
+                <span className="absolute inset-0 blur-sm bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 bg-clip-text text-transparent opacity-50 animate-pulse">
+                  Gabrihell Services
+                </span>
+              </span>
+            </div>
+            {/* Partículas de fogo */}
+            <div className="absolute -top-1 left-0 w-full h-full pointer-events-none overflow-hidden">
+              <span className="absolute top-0 left-1/4 w-1 h-1 bg-orange-500 rounded-full animate-fire-particle-1 opacity-0"></span>
+              <span className="absolute top-0 left-1/2 w-1 h-1 bg-red-500 rounded-full animate-fire-particle-2 opacity-0"></span>
+              <span className="absolute top-0 left-3/4 w-1 h-1 bg-yellow-500 rounded-full animate-fire-particle-3 opacity-0"></span>
+            </div>
           </div>
           <ul className="flex gap-8">
             <li>
