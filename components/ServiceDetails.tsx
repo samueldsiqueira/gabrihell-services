@@ -105,11 +105,7 @@ export default function ServiceDetails() {
   }, [])
 
   return (
-    <section className="relative py-24 bg-tibia-bg tibia-texture-dark">
-      {/* Gradiente superior suave */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-tibia-bgLight via-tibia-bgLight/50 to-transparent pointer-events-none"></div>
-      {/* Gradiente inferior suave */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-tibia-bgLight via-tibia-bgLight/50 to-transparent pointer-events-none"></div>
+    <section className="py-20 bg-tibia-bg tibia-texture-dark">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-tibia-yellow font-cinzel drop-shadow-[0_0_15px_rgba(255,255,0,0.6)]">
           Detalhes dos Serviços

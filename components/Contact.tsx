@@ -2,9 +2,7 @@ import Image from 'next/image'
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-24 overflow-hidden bg-tibia-bg tibia-texture-dark">
-      {/* Gradiente superior suave */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-tibia-bgLight via-tibia-bgLight/50 to-transparent pointer-events-none z-20"></div>
+    <section id="contact" className="relative py-20 overflow-hidden bg-tibia-bg tibia-texture-dark">
       
       {/* Background Image */}
       <div className="absolute inset-0 z-0">

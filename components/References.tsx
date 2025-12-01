@@ -32,11 +32,7 @@ export default function References() {
   }, [])
 
   return (
-    <section id="references" ref={sectionRef} className="relative py-24 bg-tibia-bgLight tibia-texture">
-      {/* Gradiente superior suave */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-tibia-bg via-tibia-bg/50 to-transparent pointer-events-none"></div>
-      {/* Gradiente inferior suave */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-tibia-bgLight via-tibia-bgLight/50 to-transparent pointer-events-none"></div>
+    <section id="references" ref={sectionRef} className="py-20 bg-tibia-bgLight tibia-texture">
       <div className="container mx-auto px-4">
         {/* Estatísticas */}
         <div className="mb-20">
