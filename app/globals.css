@@ -301,3 +301,36 @@ body {
         background-position: -10% 10%, 0 0;
     }
 }
+
+/* Transições suaves entre seções */
+.section-transition-top {
+    position: relative;
+}
+
+.section-transition-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, var(--tw-gradient-from), transparent);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.section-transition-bottom {
+    position: relative;
+}
+
+.section-transition-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to top, var(--tw-gradient-to), transparent);
+    pointer-events: none;
+    z-index: 1;
+}

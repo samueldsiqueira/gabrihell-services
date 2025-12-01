@@ -58,7 +58,11 @@ export default function Services() {
   }, [])
 
   return (
-    <section id="services" ref={sectionRef} className="py-20 bg-tibia-bgLight border-y-2 border-tibia-bg tibia-texture">
+    <section id="services" ref={sectionRef} className="relative py-24 bg-tibia-bgLight tibia-texture">
+      {/* Gradiente superior suave */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-tibia-bg via-tibia-bg/50 to-transparent pointer-events-none"></div>
+      {/* Gradiente inferior suave */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-tibia-bg via-tibia-bg/50 to-transparent pointer-events-none"></div>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-tibia-yellow font-cinzel drop-shadow-[0_0_15px_rgba(255,255,0,0.6)]">
           Nossos Serviços

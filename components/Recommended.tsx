@@ -2,7 +2,11 @@ import Image from 'next/image'
 
 export default function Recommended() {
   return (
-    <section id="recommended" className="relative py-20 overflow-hidden bg-tibia-bgLight tibia-texture-dark">
+    <section id="recommended" className="relative py-24 overflow-hidden bg-tibia-bgLight tibia-texture-dark">
+      {/* Gradiente superior suave */}
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-tibia-bgLight via-tibia-bgLight/50 to-transparent pointer-events-none z-20"></div>
+      {/* Gradiente inferior suave */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-tibia-bg via-tibia-bg/50 to-transparent pointer-events-none z-20"></div>
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
