@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Illustrations/Artworks/ClientArtworkWinter2024.jpg"
+          src="/Illustrations/Artworks/ClientArtworkWinter2021.jpg"
           alt="Tibia Background"
           fill
           className="object-cover opacity-20"
