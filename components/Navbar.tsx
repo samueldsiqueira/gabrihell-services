@@ -50,6 +50,11 @@ export default function Navbar() {
               </a>
             </li>
             <li>
+              <a href="#recommended" className="text-tibia-gray hover:text-tibia-purple transition-colors font-semibold">
+                Recomendados
+              </a>
+            </li>
+            <li>
               <a href="#contact" className="text-tibia-gray hover:text-tibia-purple transition-colors font-semibold">
                 Contato
               </a>
